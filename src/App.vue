@@ -9,7 +9,7 @@
       <span :class="{ done: todo.done }" @click="doneTodo(todo)">
         {{ todo.content }} 
       </span>
-      <button @click="removeTodo(index)">Remove</button>
+      <i @click="removeTodo(index)" class="fas fa-times"></i>
     </li>
   </ul>
 
