@@ -29,7 +29,7 @@ export default {
       done: false,
       content: ''
     }]
-    const todosData = JSON.parse(localStorage.getItem('todos')) || defaultData;
+    const todosData = JSON.parse(localStorage.getItem('todos'));
     const todos = ref(todosData);
 
     function addTodo() {
@@ -96,6 +96,11 @@ h1 {
   text-align: center;
 }
 
+h4 {
+  font-size: 15px;
+  text-align: center;
+}
+
 input {
   display: block;
   width: 100%;
@@ -123,7 +128,6 @@ input:focus {
 ul {
 	padding: 10px;
 }
-
 
 li {
 	display: flex;
