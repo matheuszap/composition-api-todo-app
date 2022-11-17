@@ -29,7 +29,7 @@ export default {
       done: false,
       content: ''
     }]
-    const todosData = JSON.parse(localStorage.getItem('todos'));
+    const todosData = JSON.parse(localStorage.getItem('todos')) || defaultData;
     const todos = ref(todosData);
 
     function addTodo() {
